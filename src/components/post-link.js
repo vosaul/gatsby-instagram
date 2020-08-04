@@ -5,7 +5,7 @@ const PostLink = ({ post }) => {
   return (
     <div className="team_item">
       <div className="author_img_box">
-        <img src={post.frontmatter.image} alt="{post.frontmatter.title}" />
+        <img src={post.frontmatter.image} alt="{post.frontmatter.title}" className='author_image'/>
       </div>
       <div className="text_box">
         <h3>
