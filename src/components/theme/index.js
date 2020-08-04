@@ -1,6 +1,6 @@
 // Overriding the default breakpoints of the default theme
 // https://baseweb.design/blog/responsive-web/#custom-breakpoints;
-import { LightTheme } from 'baseui';
+import { DarkTheme } from 'baseui';
 
 const breakpoints = Object.freeze({
   small: 769,
@@ -21,4 +21,4 @@ const ResponsiveTheme = Object.keys(breakpoints).reduce(
   }
 );
 
-export default { ...LightTheme, ...ResponsiveTheme };
+export default { ...DarkTheme, ...ResponsiveTheme };

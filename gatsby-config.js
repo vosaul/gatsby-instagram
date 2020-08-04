@@ -3,8 +3,13 @@ const config = require('./data/config');
 module.exports = {
   siteMetadata: {
     title: config.title,
+    subtitle: config.subtitle,
     description: config.description,
     author: config.author,
+    email: config.email,
+    services: config.services,
+    socials: config.socials,
+    works: config.works,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,8 +18,11 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/static/images`,
+        name: `markdown-pages`,
+        path: `${__dirname}/content/markdown-pages`,
       },
     },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-sharp`,
     },

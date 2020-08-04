@@ -66,7 +66,7 @@ const ImageGallery = () => {
       // 1 column for small devices
       // 2 columns for medium devices
       // 3 columns for large devices
-      flexGridColumnCount={[1, 2, 3]}
+      flexGridColumnCount={[1, 2, 4]}
       flexGridColumnGap={['scale0', 'scale200']}
       flexGridRowGap={['scale0', 'scale200']}
     >

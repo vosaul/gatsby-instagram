@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import Footer from './footer';
-import Header from './header';
+//import Header from './header';
 import 'theme/layout.css';
 
 const Layout = ({ children }) => {
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Block>
         <main>{children}</main>
       </Block>
