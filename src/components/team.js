@@ -29,7 +29,6 @@ const Team = () => {
         id,
         frontmatter: { image, slug, title },
       } = node;
-      console.log(node);
       return <PostLink key={id} post={node} />;
     });
     return Members;
